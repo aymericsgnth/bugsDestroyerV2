@@ -86,3 +86,7 @@ dotnet publish -c Release -r osx-x64 /p:PublishReadyToRun=false /p:TieredCompila
 - Tir : 4
 - Entrer : 5
 
+## Crédits
+
+La version originale du jeu vient de [ce git](https://github.com/AlecInfo/BugsDestroyer)
+
