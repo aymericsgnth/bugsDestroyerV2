@@ -27,10 +27,6 @@ dotnet tool install -g dotnet-mgcb-editor
 
 # Compilateur d'effets MonoGame (MGFXC ; auparavant 2MGFX)
 dotnet tool install -g dotnet-mgfxc
-
-# Après installation
-mgcb-editor
-mgcb-editor --register
 ```
 
 3. Récupérer le code source 
