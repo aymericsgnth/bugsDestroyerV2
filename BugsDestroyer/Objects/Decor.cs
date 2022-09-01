@@ -10,6 +10,12 @@ using System.Linq;
 
 namespace BugsDestroyer
 {
+    /*
+     * Thibaud Hegelbach, Aymeric Siegenthaler, Yoann Meier, Alexandre Babich
+     * Decor.cs
+     * Contains the class Decor
+     * Version 2.0
+     */
     public class Decor : Object
     {
         /// <summary>

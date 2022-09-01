@@ -11,6 +11,12 @@ using System.Linq;
 
 namespace BugsDestroyer
 {
+    /*
+     * Thibaud Hegelbach, Aymeric Siegenthaler, Yoann Meier, Alexandre Babich
+     * Trapdoor.cs
+     * Contains the class Trapdoor
+     * Version 2.0
+     */
     public class Trapdoor
     { 
         // varriables
