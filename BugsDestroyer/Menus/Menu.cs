@@ -28,10 +28,7 @@ namespace BugsDestroyer
 
         private string _selectedPlayerText = "1 player";
         private bool _selectedPlayer1 = true;
-
-        
         private string _selectedDifficultyText = "Normal";
-        private bool _selectedDifficult = true;
 
 
         /// <summary>
