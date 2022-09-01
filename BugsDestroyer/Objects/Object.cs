@@ -10,6 +10,12 @@ using System.Linq;
 
 namespace BugsDestroyer
 {
+    /*
+     * Thibaud Hegelbach, Aymeric Siegenthaler, Yoann Meier, Alexandre Babich
+     * Object.cs
+     * Contains the abstract class Object
+     * Version 2.0
+     */
     public abstract class Object
     {
         public Vector2 position;
