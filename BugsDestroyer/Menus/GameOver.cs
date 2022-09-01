@@ -152,6 +152,7 @@ namespace BugsDestroyer
                     if ( Keyboard.GetState().IsKeyDown(Keys.D8))
                     {
                         StartSfx.Play();
+                        _level = 0;
                         this.Exit();
                         // Si il a cliqué sur non
                         if (!_isYes)
