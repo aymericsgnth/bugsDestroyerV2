@@ -8,15 +8,18 @@ namespace BugsDestroyer
         static void Main()
         {
             Game1 game = null;
-            while (Globals.gameIsRunning)
+            do
             {
                 if (game != null)
                 {
                     game.Dispose();
                 }
+                Globals.gameShouldRestart = false;
                 game = new Game1();
                 game.Run();
+               
             }
+            while (Globals.gameShouldRestart);
         }
     }
 }

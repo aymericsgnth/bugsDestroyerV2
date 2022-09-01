@@ -153,12 +153,13 @@ namespace BugsDestroyer
                     {
                         StartSfx.Play();
                         _level = 0;
-                        this.Exit();
-                        // Si il a cliqué sur non
-                        if (!_isYes)
+                        // Si il a cliqué sur oui
+                        if (_isYes)
                         {
-                            Globals.gameIsRunning = false;
+                            Globals.gameShouldRestart = true;
                         }
+                        this.Exit();
+                        
                         
                     }
                 }
