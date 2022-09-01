@@ -9,6 +9,12 @@ using System.Linq;
 
 namespace BugsDestroyer
 {
+    /*
+     * Thibaud Hegelbach, Aymeric Siegenthaler, Yoann Meier, Alexandre Babich
+     * Health.cs
+     * Contains the display for health items
+     * Version 2.0
+     */
     class Health : Item
     {
         // Attributs
