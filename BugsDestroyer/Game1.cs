@@ -49,7 +49,7 @@ namespace BugsDestroyer
         private Texture2D[] _projectileSprite = new Texture2D[2];
         private Texture2D _healthBarTexture;
         private Texture2D _healthItem;
-
+        private Texture2D _damageItem;
         // Textures Decor
         public List<Texture2D> Sol = new List<Texture2D>();
         private Texture2D _murs;
@@ -262,6 +262,7 @@ namespace BugsDestroyer
             #region Items
 
             _healthItem = Content.Load<Texture2D>("Img/Items/healthItem");
+            //_damageItem = Content.Load<Texture2D>("Img/Items/damageItem");
 
             #endregion
 
