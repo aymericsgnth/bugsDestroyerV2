@@ -20,6 +20,7 @@ namespace BugsDestroyer
 
         //Timer
         private float timerMenu = 0f;
+        private float timerDifficulty = 0f;
 
         private bool _isSectionGame = false;
         private bool _isSectionPlayer = true;
@@ -66,6 +67,7 @@ namespace BugsDestroyer
         protected void menuUpdate(GameTime gameTime)
         {
             timerMenu += (float)gameTime.ElapsedGameTime.TotalSeconds;
+            timerDifficulty += (float)gameTime.ElapsedGameTime.TotalSeconds;
             // modification de couleur et d'opacitiée entre la sélection de player et play
             if (_isSectionPlayer && timerMenu >= 0.1f && (Keyboard.GetState().IsKeyDown(Keys.S) || Keyboard.GetState().IsKeyDown(Keys.Down)))
             {
@@ -134,17 +136,29 @@ namespace BugsDestroyer
             else if (_isSectionDifficulty)
             {
                 // Les sélections de difficulté
-                if (_selectedDifficult && (Keyboard.GetState().IsKeyDown(Keys.A) || Keyboard.GetState().IsKeyDown(Keys.Right) || Keyboard.GetState().IsKeyDown(Keys.D9)))
+                if (_selectedDifficultyText == "Normal" && timerDifficulty >= 0.1f && (Keyboard.GetState().IsKeyDown(Keys.A) || Keyboard.GetState().IsKeyDown(Keys.Right) || Keyboard.GetState().IsKeyDown(Keys.D9)))
                 {
                     MenuSfx.Play();
-                    _selectedDifficult = false;
                     _selectedDifficultyText = "Difficult";
+                    timerDifficulty = 0f;
                 }
-                else if (!_selectedDifficult && (Keyboard.GetState().IsKeyDown(Keys.D) || Keyboard.GetState().IsKeyDown(Keys.Left) || Keyboard.GetState().IsKeyDown(Keys.D7)))
+                else if (_selectedDifficultyText == "Easy" && timerDifficulty >= 0.1f && (Keyboard.GetState().IsKeyDown(Keys.A) || Keyboard.GetState().IsKeyDown(Keys.Right) || Keyboard.GetState().IsKeyDown(Keys.D9)))
                 {
                     MenuSfx.Play();
-                    _selectedDifficult = true;
                     _selectedDifficultyText = "Normal";
+                    timerDifficulty = 0f;
+                }
+                else if (_selectedDifficultyText == "Difficult" && timerDifficulty >= 0.1f && (Keyboard.GetState().IsKeyDown(Keys.D) || Keyboard.GetState().IsKeyDown(Keys.Left) || Keyboard.GetState().IsKeyDown(Keys.D7)))
+                {
+                    MenuSfx.Play();
+                    _selectedDifficultyText = "Normal";
+                    timerDifficulty = 0f;
+                }
+                else if (_selectedDifficultyText == "Normal" && timerDifficulty >= 0.1f && (Keyboard.GetState().IsKeyDown(Keys.D) || Keyboard.GetState().IsKeyDown(Keys.Left) || Keyboard.GetState().IsKeyDown(Keys.D7)))
+                {
+                    MenuSfx.Play();
+                    _selectedDifficultyText = "Easy";
+                    timerDifficulty = 0f;
                 }
             }
             else if (!_isSectionPlayer && !_isSectionDifficulty)
@@ -185,14 +199,19 @@ namespace BugsDestroyer
             }
 
             // Niveau de difficulté
-            if (!_selectedDifficult)
+            if (_selectedDifficultyText == "Normal")
             {
-                _spriteBatch.Draw(_menuImages[2], new Vector2(_graphics.PreferredBackBufferWidth / 2 - 180, 500), null, _colorSectionDifficulty, 0f, Vector2.Zero, 2.75f, SpriteEffects.None, 0f);
+                _spriteBatch.Draw(_menuImages[2], new Vector2(_graphics.PreferredBackBufferWidth / 2 - 140, 500), null, _colorSectionDifficulty, 0f, Vector2.Zero, 2.75f, SpriteEffects.None, 0f);
+                _spriteBatch.Draw(_menuImages[1], new Vector2(_graphics.PreferredBackBufferWidth / 2 + 90, 500), null, _colorSectionDifficulty, 0f, Vector2.Zero, 2.75f, SpriteEffects.None, 0f);
             }
             _spriteBatch.DrawString(_font, _selectedDifficultyText, new Vector2(_graphics.PreferredBackBufferWidth / 2, 520), _colorSectionDifficulty, 0f, new Vector2(_font.MeasureString(_selectedDifficultyText).X / 2, _font.MeasureString(_selectedDifficultyText).Y / 2), 0.75f, SpriteEffects.None, 0f);
-            if (_selectedDifficult)
+            if (_selectedDifficultyText == "Difficult")
             {
-                _spriteBatch.Draw(_menuImages[1], new Vector2(_graphics.PreferredBackBufferWidth / 2 + 100, 500), null, _colorSectionDifficulty, 0f, Vector2.Zero, 2.75f, SpriteEffects.None, 0f);
+                _spriteBatch.Draw(_menuImages[2], new Vector2(_graphics.PreferredBackBufferWidth / 2 - 170, 500), null, _colorSectionDifficulty, 0f, Vector2.Zero, 2.75f, SpriteEffects.None, 0f);
+            }
+            if (_selectedDifficultyText == "Easy")
+            {
+                _spriteBatch.Draw(_menuImages[1], new Vector2(_graphics.PreferredBackBufferWidth / 2 + 80, 500), null, _colorSectionDifficulty, 0f, Vector2.Zero, 2.75f, SpriteEffects.None, 0f);
             }
 
             // Jeux
