@@ -15,9 +15,9 @@ namespace BugsDestroyer
         // Variables
         private List<Texture2D> _menuImages;
 
-        private Color _colorSectionPlayer = Color.LightGray * 0.5f;
-        private Color _colorSectionGame = Color.White;
-        private Color _colorSectionDifficulty = Color.White;
+        private Color _colorSectionPlayer = Color.White; 
+        private Color _colorSectionGame = Color.LightGray * 0.5f;
+        private Color _colorSectionDifficulty = Color.LightGray * 0.5f;
 
         //Timer
         private float timerMenu = 0f;
@@ -73,9 +73,9 @@ namespace BugsDestroyer
                 _isSectionPlayer = false;
                 _isSectionDifficulty = true;
                 _isSectionGame = false;
-                _colorSectionPlayer = Color.White;
-                _colorSectionGame = Color.White;
-                _colorSectionDifficulty = Color.LightGray * 0.5f;
+                _colorSectionPlayer = Color.LightGray * 0.5f;
+                _colorSectionGame = Color.LightGray * 0.5f;
+                _colorSectionDifficulty = Color.White;
                 timerMenu = 0f;
             }
             else if (_isSectionDifficulty && timerMenu >= 0.3f && (Keyboard.GetState().IsKeyDown(Keys.S) || Keyboard.GetState().IsKeyDown(Keys.Down)))
@@ -84,9 +84,9 @@ namespace BugsDestroyer
                 _isSectionPlayer = false;
                 _isSectionDifficulty = false;
                 _isSectionGame = true;
-                _colorSectionPlayer = Color.White;
-                _colorSectionGame = Color.LightGray * 0.5f;
-                _colorSectionDifficulty = Color.White;
+                _colorSectionPlayer = Color.LightGray * 0.5f;
+                _colorSectionGame = Color.White;
+                _colorSectionDifficulty = Color.LightGray * 0.5f;
                 timerMenu = 0f;
             }
 
@@ -97,9 +97,9 @@ namespace BugsDestroyer
                 _isSectionPlayer = true;
                 _isSectionDifficulty = false;
                 _isSectionGame = false;
-                _colorSectionPlayer = Color.LightGray * 0.5f;
-                _colorSectionGame = Color.White;
-                _colorSectionDifficulty = Color.White;
+                _colorSectionPlayer = Color.White;
+                _colorSectionGame = Color.LightGray * 0.5f;
+                _colorSectionDifficulty = Color.LightGray * 0.5f;
                 timerMenu = 0f;
             }
             else if (_isSectionGame && timerMenu >= 0.3f && (Keyboard.GetState().IsKeyDown(Keys.W) || Keyboard.GetState().IsKeyDown(Keys.Up)))
@@ -108,9 +108,9 @@ namespace BugsDestroyer
                 _isSectionPlayer = false;
                 _isSectionDifficulty = true;
                 _isSectionGame = false;
-                _colorSectionPlayer = Color.White;
-                _colorSectionGame = Color.White;
-                _colorSectionDifficulty = Color.LightGray * 0.5f;
+                _colorSectionPlayer = Color.LightGray * 0.5f;
+                _colorSectionGame = Color.LightGray * 0.5f;
+                _colorSectionDifficulty = Color.White;
                 timerMenu = 0f;
             }
 
