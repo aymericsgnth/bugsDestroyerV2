@@ -39,7 +39,7 @@ namespace BugsDestroyer
         public bool isOnTrapdoor = false;
 
         // Point de vie
-        public const int HEALTH_POINT_MAX = 100;
+        public const int HEALTH_POINT_MAX = 150;
         public const int HEALTH_POINT_MIN = 0; 
         private int _healthPoint = HEALTH_POINT_MAX;
         public int healthPoint { get => _healthPoint;
@@ -96,6 +96,18 @@ namespace BugsDestroyer
             this._projectileSprite = projectileSprite;
 
             this.position = position;
+            switch (Globals.multDifficulty)
+            {
+                case "Easy":
+                    _healthPoint = HEALTH_POINT_MAX;
+                    break;
+                case "Normal":
+                    _healthPoint = 100;
+                    break;
+                case "Difficult":
+                    _healthPoint = 75;
+                    break;
+            }
         }
 
 

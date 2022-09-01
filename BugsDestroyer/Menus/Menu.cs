@@ -6,6 +6,7 @@ using Microsoft.Xna.Framework.Media;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Diagnostics;
 
 namespace BugsDestroyer
 {
@@ -138,6 +139,7 @@ namespace BugsDestroyer
                     MenuSfx.Play();
                     _selectedDifficultyText = "Difficult";
                     timerDifficulty = 0f;
+                    
                 }
                 else if (_selectedDifficultyText == "Easy" && timerDifficulty >= 0.3f && (Keyboard.GetState().IsKeyDown(Keys.D) || Keyboard.GetState().IsKeyDown(Keys.Right) || Keyboard.GetState().IsKeyDown(Keys.D9)))
                 {
@@ -163,6 +165,7 @@ namespace BugsDestroyer
                 // lencement du jeu
                 if (_isOnMenu && (Keyboard.GetState().IsKeyDown(Keys.D8)))
                 {
+                    Globals.multDifficulty = _selectedDifficultyText;
                     StartSfx.Play();
                     _isOnMenu = false;
                 }

@@ -8,5 +8,7 @@ namespace BugsDestroyer
     internal class Globals
     {
         public static bool gameShouldRestart = false;
+
+        public static string multDifficulty = "";
     }
 }

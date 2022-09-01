@@ -6,6 +6,7 @@ using Microsoft.Xna.Framework.Media;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Diagnostics;
 
 namespace BugsDestroyer
 {
@@ -89,7 +90,6 @@ namespace BugsDestroyer
         private float _currentTimeMiliTrasition = 0f;
         private float _countDurationMiliTrasition = 1f;
         private int _timerMiliTrasition = 0;
-        private float multDifficulty = 0f;
 
         public enum direction
         {
@@ -445,19 +445,9 @@ namespace BugsDestroyer
                         }
                     }
 
-                    // Multiplicateur pour la difficulté
-                    if (_selectedDifficultyText == "Easy")
-                    {
-                        multDifficulty = 0.7f;
-                    }
-                    else if (_selectedDifficultyText == "Normal")
-                    {
-                        multDifficulty = 0.9f;
-                    }
-                    else if (_selectedDifficultyText == "Difficult")
-                    {
-                        multDifficulty = 1f;
-                    }
+                    
+                    
+
 
                     #endregion
 
