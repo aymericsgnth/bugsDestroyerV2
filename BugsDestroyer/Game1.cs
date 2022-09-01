@@ -7,9 +7,14 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-
 namespace BugsDestroyer
 {
+    /*
+    * Thibaud Hegelbach, Aymeric Siegenthaler, Yoann Meier, Alexandre Babich
+    * Beetle.cs
+    * Contains the Cockroach that contains the futur butterfly
+    * Version 2.0
+    */
     public partial class Game1 : Game
     {
         // Game
@@ -84,6 +89,7 @@ namespace BugsDestroyer
         private float _currentTimeMiliTrasition = 0f;
         private float _countDurationMiliTrasition = 1f;
         private int _timerMiliTrasition = 0;
+        private float multDifficulty = 0f;
 
         public enum direction
         {
@@ -437,6 +443,21 @@ namespace BugsDestroyer
                             );
                         }
                     }
+
+                    // Multiplicateur pour la difficulté
+                    if (_selectedDifficultyText == "Easy")
+                    {
+                        multDifficulty = 0.7f;
+                    }
+                    else if (_selectedDifficultyText == "Normal")
+                    {
+                        multDifficulty = 0.9f;
+                    }
+                    else if (_selectedDifficultyText == "Difficult")
+                    {
+                        multDifficulty = 1f;
+                    }
+
                     #endregion
 
                     #endregion
