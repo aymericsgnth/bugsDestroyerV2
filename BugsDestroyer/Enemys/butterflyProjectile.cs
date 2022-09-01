@@ -16,7 +16,7 @@ namespace BugsDestroyer
      * Contains the projectile of the butterfly bug
      * Version 2.0
      */
-    class butterflyProjectile : Enemy
+    class ButterflyProjectile : Enemy
     {
         private bool _isFirstTime = true;
         private List<Player> mobPlayers = new List<Player>();
@@ -24,7 +24,7 @@ namespace BugsDestroyer
 
 
         // Ctor
-        public butterflyProjectile(Vector2 initialPos, Texture2D projectile)
+        public ButterflyProjectile(Vector2 initialPos, Texture2D projectile)
         {
             this.CurrentFrame = projectile;
 

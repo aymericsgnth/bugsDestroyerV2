@@ -143,7 +143,7 @@ namespace BugsDestroyer
                         else // big flap
                         {
                             this.CurrentFrame = this._Frames[3];
-                            enemies.Add(new butterflyProjectile(this.position, _butterflyProjectile));
+                            enemies.Add(new ButterflyProjectile(this.position, _butterflyProjectile));
 
                             this._bigFlapCounter = 0;
                         }
