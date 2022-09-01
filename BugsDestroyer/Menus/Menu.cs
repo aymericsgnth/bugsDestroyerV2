@@ -69,7 +69,7 @@ namespace BugsDestroyer
             timerMenu += (float)gameTime.ElapsedGameTime.TotalSeconds;
             timerDifficulty += (float)gameTime.ElapsedGameTime.TotalSeconds;
             // modification de couleur et d'opacitiée entre la sélection de player et play
-            if (_isSectionPlayer && timerMenu >= 0.1f && (Keyboard.GetState().IsKeyDown(Keys.S) || Keyboard.GetState().IsKeyDown(Keys.Down)))
+            if (_isSectionPlayer && timerMenu >= 0.3f && (Keyboard.GetState().IsKeyDown(Keys.S) || Keyboard.GetState().IsKeyDown(Keys.Down)))
             {
                 MenuSfx.Play();
                 _isSectionPlayer = false;
@@ -80,7 +80,7 @@ namespace BugsDestroyer
                 _colorSectionDifficulty = Color.LightGray * 0.5f;
                 timerMenu = 0f;
             }
-            else if (_isSectionDifficulty && timerMenu >= 0.1f && (Keyboard.GetState().IsKeyDown(Keys.S) || Keyboard.GetState().IsKeyDown(Keys.Down)))
+            else if (_isSectionDifficulty && timerMenu >= 0.3f && (Keyboard.GetState().IsKeyDown(Keys.S) || Keyboard.GetState().IsKeyDown(Keys.Down)))
             {
                 MenuSfx.Play();
                 _isSectionPlayer = false;
@@ -93,7 +93,7 @@ namespace BugsDestroyer
             }
 
 
-            if (_isSectionDifficulty && timerMenu >= 0.1f && (Keyboard.GetState().IsKeyDown(Keys.W) || Keyboard.GetState().IsKeyDown(Keys.Up)))
+            if (_isSectionDifficulty && timerMenu >= 0.3f && (Keyboard.GetState().IsKeyDown(Keys.W) || Keyboard.GetState().IsKeyDown(Keys.Up)))
             {
                 MenuSfx.Play();
                 _isSectionPlayer = true;
@@ -104,7 +104,7 @@ namespace BugsDestroyer
                 _colorSectionDifficulty = Color.White;
                 timerMenu = 0f;
             }
-            else if (_isSectionGame && timerMenu >= 0.1f && (Keyboard.GetState().IsKeyDown(Keys.W) || Keyboard.GetState().IsKeyDown(Keys.Up)))
+            else if (_isSectionGame && timerMenu >= 0.3f && (Keyboard.GetState().IsKeyDown(Keys.W) || Keyboard.GetState().IsKeyDown(Keys.Up)))
             {
                 MenuSfx.Play();
                 _isSectionPlayer = false;
@@ -136,25 +136,25 @@ namespace BugsDestroyer
             else if (_isSectionDifficulty)
             {
                 // Les sélections de difficulté
-                if (_selectedDifficultyText == "Normal" && timerDifficulty >= 0.1f && (Keyboard.GetState().IsKeyDown(Keys.A) || Keyboard.GetState().IsKeyDown(Keys.Right) || Keyboard.GetState().IsKeyDown(Keys.D9)))
+                if (_selectedDifficultyText == "Normal" && timerDifficulty >= 0.3f && (Keyboard.GetState().IsKeyDown(Keys.A) || Keyboard.GetState().IsKeyDown(Keys.Right) || Keyboard.GetState().IsKeyDown(Keys.D9)))
                 {
                     MenuSfx.Play();
                     _selectedDifficultyText = "Difficult";
                     timerDifficulty = 0f;
                 }
-                else if (_selectedDifficultyText == "Easy" && timerDifficulty >= 0.1f && (Keyboard.GetState().IsKeyDown(Keys.A) || Keyboard.GetState().IsKeyDown(Keys.Right) || Keyboard.GetState().IsKeyDown(Keys.D9)))
+                else if (_selectedDifficultyText == "Easy" && timerDifficulty >= 0.3f && (Keyboard.GetState().IsKeyDown(Keys.A) || Keyboard.GetState().IsKeyDown(Keys.Right) || Keyboard.GetState().IsKeyDown(Keys.D9)))
                 {
                     MenuSfx.Play();
                     _selectedDifficultyText = "Normal";
                     timerDifficulty = 0f;
                 }
-                else if (_selectedDifficultyText == "Difficult" && timerDifficulty >= 0.1f && (Keyboard.GetState().IsKeyDown(Keys.D) || Keyboard.GetState().IsKeyDown(Keys.Left) || Keyboard.GetState().IsKeyDown(Keys.D7)))
+                else if (_selectedDifficultyText == "Difficult" && timerDifficulty >= 0.3f && (Keyboard.GetState().IsKeyDown(Keys.D) || Keyboard.GetState().IsKeyDown(Keys.Left) || Keyboard.GetState().IsKeyDown(Keys.D7)))
                 {
                     MenuSfx.Play();
                     _selectedDifficultyText = "Normal";
                     timerDifficulty = 0f;
                 }
-                else if (_selectedDifficultyText == "Normal" && timerDifficulty >= 0.1f && (Keyboard.GetState().IsKeyDown(Keys.D) || Keyboard.GetState().IsKeyDown(Keys.Left) || Keyboard.GetState().IsKeyDown(Keys.D7)))
+                else if (_selectedDifficultyText == "Normal" && timerDifficulty >= 0.3f && (Keyboard.GetState().IsKeyDown(Keys.D) || Keyboard.GetState().IsKeyDown(Keys.Left) || Keyboard.GetState().IsKeyDown(Keys.D7)))
                 {
                     MenuSfx.Play();
                     _selectedDifficultyText = "Easy";
