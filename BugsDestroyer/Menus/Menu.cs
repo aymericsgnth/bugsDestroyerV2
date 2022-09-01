@@ -147,13 +147,13 @@ namespace BugsDestroyer
                     _selectedDifficultyText = "Normal";
                     timerDifficulty = 0f;
                 }
-                else if (_selectedDifficultyText == "Difficult" && timerDifficulty >= 0.3f && (Keyboard.GetState().IsKeyDown(Keys.D) || Keyboard.GetState().IsKeyDown(Keys.Left) || Keyboard.GetState().IsKeyDown(Keys.D7)))
+                else if (_selectedDifficultyText == "Difficult" && timerDifficulty >= 0.3f && (Keyboard.GetState().IsKeyDown(Keys.A) || Keyboard.GetState().IsKeyDown(Keys.Left) || Keyboard.GetState().IsKeyDown(Keys.D7)))
                 {
                     MenuSfx.Play();
                     _selectedDifficultyText = "Normal";
                     timerDifficulty = 0f;
                 }
-                else if (_selectedDifficultyText == "Normal" && timerDifficulty >= 0.3f && (Keyboard.GetState().IsKeyDown(Keys.D) || Keyboard.GetState().IsKeyDown(Keys.Left) || Keyboard.GetState().IsKeyDown(Keys.D7)))
+                else if (_selectedDifficultyText == "Normal" && timerDifficulty >= 0.3f && (Keyboard.GetState().IsKeyDown(Keys.A) || Keyboard.GetState().IsKeyDown(Keys.Left) || Keyboard.GetState().IsKeyDown(Keys.D7)))
                 {
                     MenuSfx.Play();
                     _selectedDifficultyText = "Easy";
