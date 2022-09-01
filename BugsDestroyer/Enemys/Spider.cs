@@ -27,7 +27,7 @@ namespace BugsDestroyer
         // attack logic
         private float _jumpDelay = 0.5f;
         private bool _isAttacking = false;
-        private int _damage = 50;
+        private int _damage = 40;
 
         // Knockback
         private int _knockbackAmount = 5;
