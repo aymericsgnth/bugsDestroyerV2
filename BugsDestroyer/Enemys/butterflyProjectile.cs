@@ -10,6 +10,12 @@ using System.Linq;
 
 namespace BugsDestroyer
 {
+    /*
+     * Thibaud Hegelbach, Aymeric Siegenthaler, Yoann Meier, Alexandre Babich
+     * butterflyProjective.cs
+     * Contains the projectile of the butterfly bug
+     * Version 2.0
+     */
     class butterflyProjectile : Enemy
     {
         private bool _isFirstTime = true;

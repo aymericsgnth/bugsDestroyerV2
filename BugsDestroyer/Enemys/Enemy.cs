@@ -10,6 +10,12 @@ using System.Linq;
 
 namespace BugsDestroyer
 {
+    /*
+     * Thibaud Hegelbach, Aymeric Siegenthaler, Yoann Meier, Alexandre Babich
+     * Enemy.cs
+     * Contains the abstract class Enemy
+     * Version 2.0
+     */
     public abstract class Enemy
     {
         // Draw Attr

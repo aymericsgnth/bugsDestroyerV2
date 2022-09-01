@@ -10,6 +10,12 @@ using System.Linq;
 
 namespace BugsDestroyer
 {
+    /*
+     * Thibaud Hegelbach, Aymeric Siegenthaler, Yoann Meier, Alexandre Babich
+     * Beetle.cs
+     * Contains the Cockroach that contains the futur butterfly
+     * Version 2.0
+     */
     class Cockroach : Enemy
     {
         // attributs

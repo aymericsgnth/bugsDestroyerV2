@@ -10,6 +10,12 @@ using System.Linq;
 
 namespace BugsDestroyer
 {
+    /*
+     * Thibaud Hegelbach, Aymeric Siegenthaler, Yoann Meier, Alexandre Babich
+     * Spider.cs
+     * Contains the Bug "Spider"
+     * Version 2.0
+     */
     class Spider : Enemy
     {
         // Attributs

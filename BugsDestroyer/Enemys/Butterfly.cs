@@ -10,6 +10,12 @@ using System.Linq;
 
 namespace BugsDestroyer
 {
+    /*
+     * Thibaud Hegelbach, Aymeric Siegenthaler, Yoann Meier, Alexandre Babich
+     * Butterfly.cs
+     * Contains the Bug "Butterfly"
+     * Version 2.0
+     */
     class Butterfly : Enemy
     {
         private Texture2D[] _Frames = new Texture2D[2];

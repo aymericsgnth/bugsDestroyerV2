@@ -9,6 +9,12 @@ using System.Linq;
 
 namespace BugsDestroyer
 {
+    /*
+     * Thibaud Hegelbach, Aymeric Siegenthaler, Yoann Meier, Alexandre Babich
+     * Explosion.cs
+     * Contains the  explosion
+     * Version 2.0
+     */
     public class Explosion
     {
         // Attributs
