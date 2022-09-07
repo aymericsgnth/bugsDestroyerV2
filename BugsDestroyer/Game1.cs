@@ -12,8 +12,8 @@ namespace BugsDestroyer
 {
     /*
     * Thibaud Hegelbach, Aymeric Siegenthaler, Yoann Meier, Alexandre Babich
-    * Beetle.cs
-    * Contains the Cockroach that contains the futur butterfly
+    * Game1.cs
+    * Contains the partial class Game
     * Version 2.0
     */
     public partial class Game1 : Game
