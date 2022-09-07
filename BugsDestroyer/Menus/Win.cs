@@ -160,7 +160,7 @@ namespace BugsDestroyer
                         {
                             for (int i = 0; i < _listhighScore.Count; i++)
                             {
-                                if (i <= 10)
+                                if (i < 10)
                                 {
                                     _tabScore.Add(new Score(_listhighScore[i].Name, _listhighScore[i].Score, new Vector2(_posX, _posY), i + 1));
                                 }
