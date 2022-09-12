@@ -29,6 +29,7 @@ namespace BugsDestroyer
         private bool _timeInTop = false;
         private bool _alreadyValidateName = false;
 
+        private bool _nameExists = false;
 
         private float _currentTimeMiliWin = 0f;
         private float _countDurationMiliWin = 1f;
@@ -366,19 +367,57 @@ namespace BugsDestroyer
                             _arrowX = _graphics.PreferredBackBufferWidth / 2 - 200;
                             // appel de la fonction changeLetter avec letter1 en paramettre
                             _letter1 = changeLetter(_letter1);
-
+                            _name = Char.ToString(_letter1) + Char.ToString(_letter2) + Char.ToString(_letter3);
+                            foreach (HighScore score in _listhighScore)
+                            {
+                                if (score.Name == _name)
+                                {
+                                    _nameExists = true;
+                                    break;
+                                }
+                                else
+                                {
+                                    _nameExists = false;
+                                }
+                            }
                             break;
                         case 2:
                             // changement de la position des flèches
                             _arrowX = _graphics.PreferredBackBufferWidth / 2;
                             // appel de la fonction changeLetter avec letter2 en paramettre
                             _letter2 = changeLetter(_letter2);
+                            _name = Char.ToString(_letter1) + Char.ToString(_letter2) + Char.ToString(_letter3);
+                            foreach (HighScore score in _listhighScore)
+                            {
+                                if (score.Name == _name)
+                                {
+                                    _nameExists = true;
+                                    break;
+                                }
+                                else
+                                {
+                                    _nameExists = false;
+                                }
+                            }
                             break;
                         case 3:
                             // changement de la position des flèches
                             _arrowX = _graphics.PreferredBackBufferWidth / 2 + 200;
                             // appel de la fonction changeLetter avec letter3 en paramettre
                             _letter3 = changeLetter(_letter3);
+                            _name = Char.ToString(_letter1) + Char.ToString(_letter2) + Char.ToString(_letter3);
+                            foreach (HighScore score in _listhighScore)
+                            {
+                                if (score.Name == _name)
+                                {
+                                    _nameExists = true;
+                                    break;
+                                }
+                                else
+                                {
+                                    _nameExists = false;
+                                }
+                            }
                             break;
                     }
                     #endregion
@@ -386,13 +425,13 @@ namespace BugsDestroyer
                     #region validation du pseudo
 
                     // si touche G est presser 
-                    if (Keyboard.GetState().IsKeyDown(Keys.G))
+                    if (Keyboard.GetState().IsKeyDown(Keys.G) && _nameExists == false)
                     {
                         _validate = true;
                     }
 
                     // si la touche G est relacher apres avoir été presser
-                    if (Keyboard.GetState().IsKeyUp(Keys.G) && _validate)
+                    if (Keyboard.GetState().IsKeyUp(Keys.G) && _validate && _nameExists == false)
                     {
                         // stockage du pseudo
                         _name = Char.ToString(_letter1) + Char.ToString(_letter2) + Char.ToString(_letter3);
@@ -475,17 +514,19 @@ namespace BugsDestroyer
                             }
                         }
 
-
-                        // enregistrement de la liste de score
-                        XmlSerializer sauver = new XmlSerializer(typeof(ListHighScore));
-                        using (StreamWriter f = new StreamWriter(_FILE))
+                        if (_nameExists == false)
                         {
-                            sauver.Serialize(f, new ListHighScore(_listhighScore));
-                        }
+                            // enregistrement de la liste de score
+                            XmlSerializer sauver = new XmlSerializer(typeof(ListHighScore));
+                            using (StreamWriter f = new StreamWriter(_FILE))
+                            {
+                                sauver.Serialize(f, new ListHighScore(_listhighScore));
+                            }
 
-                        // retour dans le menu Win
-                        _alreadyValidateName = true;
-                        _isOnChooseName = false;
+                            // retour dans le menu Win
+                            _alreadyValidateName = true;
+                            _isOnChooseName = false;
+                        }
                     }
 
                     #endregion
@@ -550,7 +591,7 @@ namespace BugsDestroyer
                             _keyDown = false;
                             _keyUp = false;
 
-                        }
+                        }                        
 
                         // retoune la lettre 
                         return letter;
@@ -612,11 +653,14 @@ namespace BugsDestroyer
                         _spriteBatch.DrawString(_font, Convert.ToString(_letter3), new Vector2(_graphics.PreferredBackBufferWidth / 2 + 200, 505), Color.White, 0f, Vector2.Zero, 2f, SpriteEffects.None, 0f);
 
                         // info pour valider
-                        if (_textDraw)
+                        if (_textDraw && _nameExists == false)
                         {
                             _spriteBatch.DrawString(_font, "validate your name with button interact", new Vector2(_graphics.PreferredBackBufferWidth / 2 + 20 , 770), Color.Lime * 0.8f, 0f, new Vector2(_font.MeasureString("validate your name with buttpn top left").X / 2, _font.MeasureString("validate your name with buttpn top left").Y / 2), 0.4f, SpriteEffects.None, 0f);
+                        }else if (_textDraw && _nameExists)
+                        {
+                            _spriteBatch.DrawString(_font, "name already exists", new Vector2(_graphics.PreferredBackBufferWidth / 2 + 20, 770), Color.Lime * 0.8f, 0f, new Vector2(_font.MeasureString("validate your name with buttpn top left").X / 2, _font.MeasureString("validate your name with buttpn top left").Y / 2), 0.4f, SpriteEffects.None, 0f);
                         }
-                        
+
                         _spriteBatch.Draw(_menuImages[4], new Vector2(_graphics.PreferredBackBufferWidth / 1.15f - 120, 860), null, Color.White, 0f, Vector2.Zero, 1.5f, SpriteEffects.None, 0f);
                         _spriteBatch.DrawString(_font, "interact", new Vector2(_graphics.PreferredBackBufferWidth / 1.15f - 10, 845), Color.White, 0f, new Vector2(0, 0), 0.25f, SpriteEffects.None, 0f);
 
