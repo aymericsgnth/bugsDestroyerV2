@@ -6,6 +6,7 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 
 namespace BugsDestroyer
@@ -37,7 +38,9 @@ namespace BugsDestroyer
         private int _effectTime = 200;
         public Color color = Color.White;
         public bool isOnTrapdoor = false;
-
+        public int globalTimer;
+        public float timerDmg = 0f;
+        public bool timerDmgIsActivated = false;
         // Point de vie
         public const int HEALTH_POINT_MAX = 150;
         public const int HEALTH_POINT_MIN = 0; 
@@ -121,7 +124,27 @@ namespace BugsDestroyer
                 
                 return;
             }
+            if (Globals.multiplicatorDmg >= 2)
+            {
+                timerDmgIsActivated = true;
+                Globals.globalTimer += (float)gameTime.ElapsedGameTime.TotalSeconds;
+            }
+            else
+            {
+                timerDmgIsActivated = false;
+            }
 
+            if (timerDmgIsActivated)
+            {
+
+
+                if (Globals.globalTimer >= 12)
+                {
+                    Globals.multiplicatorDmg--;
+                    Globals.globalTimer = 0;
+              
+                }
+            }
 
             KeyboardState kbdState = Keyboard.GetState();
 

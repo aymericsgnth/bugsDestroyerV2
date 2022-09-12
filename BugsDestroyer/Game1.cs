@@ -62,7 +62,7 @@ namespace BugsDestroyer
         private Texture2D _pileBios;
         private Texture2D _ram;
         private List<Texture2D> _trapdoor = new List<Texture2D>();
-
+        private Texture2D _trapItem;
         // Menu
         private SpriteFont _font;
         private bool _isOnMenu = true;
@@ -263,7 +263,8 @@ namespace BugsDestroyer
             #region Items
 
             _healthItem = Content.Load<Texture2D>("Img/Items/healthItem");
-            //_damageItem = Content.Load<Texture2D>("Img/Items/damageItem");
+            _damageItem = Content.Load<Texture2D>("Img/Items/healthItem");
+            _trapItem = Content.Load<Texture2D>("Img/Items/healthItem");
 
             #endregion
 

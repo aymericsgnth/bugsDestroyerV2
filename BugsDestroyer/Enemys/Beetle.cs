@@ -220,7 +220,7 @@ namespace BugsDestroyer
                     this.position -= velocity;
 
                     // change color to indicate damage (more red = more damage)
-                    this._health -= 1;
+                    this._health -= 1 * Globals.multiplicatorDmg;
                     switch (this._health)
                     {
                         case 2:
@@ -241,7 +241,7 @@ namespace BugsDestroyer
                     }
 
                     // if theres no more health remove enemy
-                    if(this._health == 0)
+                    if(this._health <= 0)
                     {
                         enemies.Remove(this); // remove enemy
 

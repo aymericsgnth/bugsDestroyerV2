@@ -257,7 +257,7 @@ namespace BugsDestroyer
                 {
 
                     // change color to indicate damage (more red = more damage)
-                    this._health -= 1;
+                    this._health -= 1 * Globals.multiplicatorDmg;
                     if (this._health == 1)
                     {
                         this.color = new Color(200, 100, 100);
@@ -276,7 +276,7 @@ namespace BugsDestroyer
                     }
 
                     // if theres no more health remove enemy
-                    if (this._health == 0)
+                    if (this._health <= 0)
                     {
                         enemies.Remove(this); // remove enemy
                         explosions.Add(new Explosion(this.position, mobExplosion, _listSfx[NUMENEMYSHURTSFX], size: 2));

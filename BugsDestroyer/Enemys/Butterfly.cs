@@ -241,11 +241,11 @@ namespace BugsDestroyer
                 {
                     if (!this.isCocoon)
                     {
-                        this._healthPoint -= 1;
+                        this._healthPoint -= 1 * Globals.multiplicatorDmg;
                         this._isHit = true;
 
                         // if theres no more health remove enemy
-                        if (this._healthPoint == 0)
+                        if (this._healthPoint <= 0)
                         {
                             enemies.Remove(this); // remove enemy
                             explosions.Add(new Explosion(this.position, mobExplosion, _listSfx[NUMENEMYSHURTSFX], size: 3.2f));
