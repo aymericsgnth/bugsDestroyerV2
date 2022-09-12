@@ -80,7 +80,8 @@ namespace BugsDestroyer
 
         //Timer
         public float timerPrincipal = 0f;
-
+        private float timerTrappe = 0f;
+        
         // Levels
         private static int _level = 0;
         private bool _isOpacityDark = true;
@@ -290,7 +291,7 @@ namespace BugsDestroyer
             } // sinon si il est pas dans le menu
             else if (!_isOnMenu)
             {
-
+                
                 // si le joueur est pas dans le menu pause
                 if (!_isPause)
                 {
@@ -299,8 +300,8 @@ namespace BugsDestroyer
                     {
                         // le timer fonctionne
                         timerPrincipal += (float)gameTime.ElapsedGameTime.TotalSeconds;
+                        timerTrappe += (float)gameTime.ElapsedGameTime.TotalSeconds;
                     }
-
 
                     #endregion
 
@@ -366,12 +367,11 @@ namespace BugsDestroyer
                             }
                         }
                     }
-
-
+                    
                     for (int i = _players.Count - 1; i >= 0; i--)
                     {
                         // si l un des joueurs presse le bouton pour intéragire et que l un des deux est en vie
-                        if (Keyboard.GetState().IsKeyDown(_players[i].interactKey) && _players[i].healthPoint > 0) {
+                        if (Keyboard.GetState().IsKeyDown(_players[i].interactKey) && _players[i].healthPoint > 0 && timerTrappe >= 0.8f) {
                             // si les joueurs sont sur la trapdoor
                             if (_players.Count >= 2 && _players[0].isOnTrapdoor && _players[1].isOnTrapdoor)
                             {
@@ -384,6 +384,7 @@ namespace BugsDestroyer
                                 // changement de niveau
                                 changeLevel();
                             }
+                            timerTrappe = 0f;
                         }
                         // si le joueur est mort 
                         else if (_players[i].healthPoint <= 0)
