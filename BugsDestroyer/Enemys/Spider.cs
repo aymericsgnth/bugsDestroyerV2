@@ -53,10 +53,19 @@ namespace BugsDestroyer
             this._listSfx = listSfx;
 
             this.CurrentFrame = _Frames[0];
-            this.speed = 12;
+            switch (Globals.multDifficulty)
+            {
+                case "Easy":
+                    this.speed = 8;
+                    break;
+                case "Normal":
+                    this.speed = 10;
+                    break;
+                case "Difficult":
+                    this.speed = 12;
+                    break;
+            }
         }
-
-
 
         // Methods
         public override void Update(GameTime gameTime, List<Player> players, List<Projectiles> projectiles, List<Enemy> enemies, List<Explosion> explosions, List<Texture2D> mobExplosion, List<Object> objects)
@@ -252,7 +261,18 @@ namespace BugsDestroyer
                     if (this._health == 1)
                     {
                         this.color = new Color(200, 100, 100);
-                        this.speed = 17f; 
+                        switch (Globals.multDifficulty)
+                        {
+                            case "Easy":
+                                this.speed = 13;
+                                break;
+                            case "Normal":
+                                this.speed = 15;
+                                break;
+                            case "Difficult":
+                                this.speed = 17;
+                                break;
+                        }
                     }
 
                     // if theres no more health remove enemy
