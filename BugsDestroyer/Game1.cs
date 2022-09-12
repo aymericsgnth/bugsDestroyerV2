@@ -268,8 +268,6 @@ namespace BugsDestroyer
             #endregion
 
             // chargement des méthodes load des classes
-            LevelLoad(_listSfx);
-
             menuLoad();
 
             menuPauseLoad();

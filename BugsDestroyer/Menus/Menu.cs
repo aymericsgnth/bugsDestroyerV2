@@ -167,6 +167,7 @@ namespace BugsDestroyer
                 {
                     Globals.multDifficulty = _selectedDifficultyText;
                     StartSfx.Play();
+                    LevelLoad(_listSfx);
                     _isOnMenu = false;
                 }
             }
