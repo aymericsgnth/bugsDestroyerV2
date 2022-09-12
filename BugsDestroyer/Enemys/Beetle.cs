@@ -225,10 +225,18 @@ namespace BugsDestroyer
                     {
                         case 2:
                             this.color = new Color(255, 170, 170);
+                            if (Globals.multDifficulty == "Difficult")
+                            {
+                                this.speed += 1;
+                            }
                             break;
 
                         case 1:
                             this.color = new Color(255, 85, 85);
+                            if (Globals.multDifficulty == "Difficult")
+                            {
+                                this.speed += 1;
+                            }
                             break;
                     }
 
