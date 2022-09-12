@@ -255,6 +255,30 @@
 /processorParam:TextureFormat=Color
 /build:Img/Items/healthItemGlow.png
 
+#begin Img/Items/healthItemGrowRed.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Img/Items/healthItemGrowRed.png
+
+#begin Img/Items/healthItemRed.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Img/Items/healthItemRed.png
+
 #begin Img/Logo/logo_CFPT.png
 /importer:TextureImporter
 /processor:TextureProcessor

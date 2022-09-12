@@ -109,3 +109,5 @@ C:\Users\Admin\Documents\3annee\bugsDestroyerV2\BugsDestroyer\obj\Debug\netcorea
 C:\Users\Admin\Documents\3annee\bugsDestroyerV2\BugsDestroyer\obj\Debug\netcoreapp3.1\BugsDestroyer.dll
 C:\Users\Admin\Documents\3annee\bugsDestroyerV2\BugsDestroyer\obj\Debug\netcoreapp3.1\BugsDestroyer.pdb
 C:\Users\Admin\Documents\3annee\bugsDestroyerV2\BugsDestroyer\obj\Debug\netcoreapp3.1\BugsDestroyer.genruntimeconfig.cache
+C:\Users\Admin\Documents\3annee\bugsDestroyerV2\BugsDestroyer\bin\Debug\netcoreapp3.1\Content\Img\Items\healthItemGrowRed.xnb
+C:\Users\Admin\Documents\3annee\bugsDestroyerV2\BugsDestroyer\bin\Debug\netcoreapp3.1\Content\Img\Items\healthItemRed.xnb

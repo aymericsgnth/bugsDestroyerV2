@@ -263,7 +263,7 @@ namespace BugsDestroyer
             #region Items
 
             _healthItem = Content.Load<Texture2D>("Img/Items/healthItem");
-            _damageItem = Content.Load<Texture2D>("Img/Items/healthItem");
+            _damageItem = Content.Load<Texture2D>("Img/Items/healthItemRed");
             _trapItem = Content.Load<Texture2D>("Img/Items/healthItem");
 
             #endregion
