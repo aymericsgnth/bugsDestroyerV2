@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Profile>Reach</Profile>
+  <Platform>DesktopGL</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Fonts/File.spritefont</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Fonts/GameBoy30.spritefont</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Decor/Glass.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Decor/MiniPCI.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Decor/mur0.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Decor/mur1.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Decor/ombre.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Decor/pattern.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Decor/PCI.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Decor/PileBios.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Decor/Processeur.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Decor/RAM.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Decor/Sol.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Decor/Sol0.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Decor/Sol1.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Decor/Sol2.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Decor/Sol3.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Decor/trapdoor0.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Decor/trapdoor1.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Items/healthItem.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Items/healthItemGlow.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Items/healthItemGrowRed.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Items/healthItemRed.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Logo/logo_CFPT.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Logo/logo_espaceEntreprise.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Menu/backgroundMenuTemp.jpg</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Menu/backgroundMenuTemp1.jpg</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Menu/backgroundMenuTemp2.jpg</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Menu/boutonCentre.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Menu/flecheDroite.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Menu/flecheGauche.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Menu/gameOver.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Menu/panelBleu.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Menu/panelRouge.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Menu/transitionWin.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Mobs/Armadeira/armadeira0.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Mobs/Armadeira/armadeira1.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Mobs/butterflyProjectile.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Mobs/Cafard/cafard0.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Mobs/Cafard/cafard1.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Mobs/Mort/mort0.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Mobs/Mort/mort1.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Mobs/Mort/mort2.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Mobs/Papillon/cocon.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Mobs/Papillon/papillon0.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Mobs/Papillon/papillon1.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Mobs/Papillon/papillon2.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Mobs/Scarabe/scarabe0.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Mobs/Scarabe/scarabe1.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Perso/mort.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Perso/shot/shot0.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Perso/shot/shot1.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Perso/shot/shot2.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Perso/tir/0.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Perso/tir/1.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Perso/tir/balle1.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Perso/tir/balle2.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Perso/tir/shotParticle.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Perso/walking/walking0.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Perso/walking/walking1.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Perso/walking/walking2.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Perso/walking/walking3.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Perso/walking/walking4.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Perso/walking/walking5.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Perso/walking/walking6.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Perso2/mort.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Perso2/shot/shot0.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Perso2/shot/shot1.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Perso2/walking/walking0.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Perso2/walking/walking1.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Perso2/walking/walking2.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Perso2/walking/walking3.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Perso2/walking/walking4.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Perso2/walking/walking5.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Img/Perso2/walking/walking6.png</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Sounds/Music/Danger Escape.ogg</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Sounds/Music/Funeral March.wav</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Sounds/Sfx/enemysHurt.wav</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Sounds/Sfx/MenuSfx.wav</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Sounds/Sfx/playersHurt.wav</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Sounds/Sfx/projectile.wav</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Sounds/Sfx/StartSfx.wav</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Sounds/Sfx/tir.mp3</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Sounds/Sfx/trapdoor.mp3</File>
+    <File>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Sounds/Sfx/wallHurt.wav</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFile>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/Sounds/Music/Danger Escape.ogg</SourceFile>
+  <SourceTime>2022-08-31T15:44:05.1728372+02:00</SourceTime>
+  <DestFile>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/bin/DesktopGL/Content/Sounds/Music/Danger Escape.xnb</DestFile>
+  <DestTime>2022-09-12T15:40:54.211752+02:00</DestTime>
+  <Importer>OggImporter</Importer>
+  <ImporterTime>2020-08-10T18:17:54+02:00</ImporterTime>
+  <Processor>SongProcessor</Processor>
+  <ProcessorTime>2020-08-10T18:17:54+02:00</ProcessorTime>
+  <Parameters>
+    <Key>Quality</Key>
+    <Value>Best</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput>
+    <string>C:/Users/Admin/Documents/3annee/bugsDestroyerV2/BugsDestroyer/Content/bin/DesktopGL/Content/Sounds/Music/Danger Escape.ogg</string>
+  </BuildOutput>
+</PipelineBuildEvent>
