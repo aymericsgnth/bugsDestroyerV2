@@ -32,7 +32,6 @@ namespace BugsDestroyer
 
         public float timerDmg = 0f;
         public bool timerDmgIsActivated = false;
-        public int globalTimer;
         // Methods
         public override void Update(GameTime gameTime, List<Item> listItems, List<Player> listPlayers)
         {

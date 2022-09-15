@@ -70,9 +70,7 @@ namespace BugsDestroyer
 
         // Sound
         Song song;
-        private SoundEffect _keyboardSfx;
         public int music = 0;
-
         // Sfx
         private List<SoundEffect> _listSfx = new List<SoundEffect>();
         SoundEffect MenuSfx;
