@@ -184,7 +184,7 @@ namespace BugsDestroyer
                     },
                     new List<Item>
                     {
-                              new Damage(_damageItem, new Vector2(_graphics.PreferredBackBufferWidth / 5.6f, _graphics.PreferredBackBufferHeight / 1.2f))
+                        new Damage(_damageItem, new Vector2(_graphics.PreferredBackBufferWidth / 5.6f, _graphics.PreferredBackBufferHeight / 1.2f))
                     },
                     new Trapdoor(_trapdoor, new Vector2(_graphics.PreferredBackBufferWidth / 1.5f, _graphics.PreferredBackBufferHeight / 4f), 2.3f, listSfx[_NUMTRAPDOORSFX])
                     )
@@ -475,27 +475,53 @@ namespace BugsDestroyer
 
 
             // level 11
-            _listLevels.Add(
-            new Levels(
-                Sol[2],
-                new List<Enemy>
-                {
-                    new Cockroach(new Vector2(_graphics.PreferredBackBufferWidth / 1.2f, _graphics.PreferredBackBufferHeight / 5f), _cockroachSprites, listSfx),
-                    new Beetle(new Vector2(_graphics.PreferredBackBufferWidth / 3f, _graphics.PreferredBackBufferHeight / 5f), _beetleSprites, listSfx),
-                    new Spider(new Vector2(_graphics.PreferredBackBufferWidth / 1.25f, _graphics.PreferredBackBufferHeight / 1.3f), _spiderSprites, listSfx),
-                },
-                new List<Decor> {
-                    new Decor(_processeur, new Vector2(_graphics.PreferredBackBufferWidth / 1.17f, _graphics.PreferredBackBufferHeight / 3f), 1.2f),
-                    new Decor(_miniPci, new Vector2(_graphics.PreferredBackBufferWidth / 3f, _graphics.PreferredBackBufferHeight / 1.6f), 3f),
-                    new Decor(_miniPci, new Vector2(_graphics.PreferredBackBufferWidth / 3f, _graphics.PreferredBackBufferHeight / 1.5f), 3f),
-                },
-                new List<Item>
-                {
-                    new Health(_healthItem, new Vector2(_graphics.PreferredBackBufferWidth / 1.2f, _graphics.PreferredBackBufferHeight / 6f))
-                },
-                new Trapdoor(_trapdoor, new Vector2(_graphics.PreferredBackBufferWidth / 4f, _graphics.PreferredBackBufferHeight / 1.3f), 2.3f, listSfx[_NUMTRAPDOORSFX]))
-            );
-
+            if (Globals.multDifficulty == "Difficult")
+            {
+                _listLevels.Add(
+                    new Levels(
+                        Sol[2],
+                        new List<Enemy>
+                        {
+                            new Cockroach(new Vector2(_graphics.PreferredBackBufferWidth / 1.2f, _graphics.PreferredBackBufferHeight / 5f), _cockroachSprites, listSfx),
+                            new Beetle(new Vector2(_graphics.PreferredBackBufferWidth / 3f, _graphics.PreferredBackBufferHeight / 5f), _beetleSprites, listSfx),
+                            new Spider(new Vector2(_graphics.PreferredBackBufferWidth / 1.25f, _graphics.PreferredBackBufferHeight / 1.3f), _spiderSprites, listSfx),
+                        },
+                        new List<Decor> {
+                        new Decor(_processeur, new Vector2(_graphics.PreferredBackBufferWidth / 1.17f, _graphics.PreferredBackBufferHeight / 3f), 1.2f),
+                        new Decor(_miniPci, new Vector2(_graphics.PreferredBackBufferWidth / 3f, _graphics.PreferredBackBufferHeight / 1.6f), 3f),
+                        new Decor(_miniPci, new Vector2(_graphics.PreferredBackBufferWidth / 3f, _graphics.PreferredBackBufferHeight / 1.5f), 3f),
+                        },
+                        new List<Item>
+                        {
+                        new Health(_healthItem, new Vector2(_graphics.PreferredBackBufferWidth / 1.2f, _graphics.PreferredBackBufferHeight / 6f))
+                        },
+                        new Trapdoor(_trapdoor, new Vector2(_graphics.PreferredBackBufferWidth / 4f, _graphics.PreferredBackBufferHeight / 1.3f), 2.3f, listSfx[_NUMTRAPDOORSFX]))
+                        );
+            }
+            else
+            {
+                _listLevels.Add(
+                    new Levels(
+                        Sol[2],
+                        new List<Enemy>
+                        {
+                            new Cockroach(new Vector2(_graphics.PreferredBackBufferWidth / 1.2f, _graphics.PreferredBackBufferHeight / 5f), _cockroachSprites, listSfx),
+                            new Beetle(new Vector2(_graphics.PreferredBackBufferWidth / 3f, _graphics.PreferredBackBufferHeight / 5f), _beetleSprites, listSfx),
+                            new Spider(new Vector2(_graphics.PreferredBackBufferWidth / 1.25f, _graphics.PreferredBackBufferHeight / 1.3f), _spiderSprites, listSfx),
+                        },
+                        new List<Decor> {
+                            new Decor(_processeur, new Vector2(_graphics.PreferredBackBufferWidth / 1.17f, _graphics.PreferredBackBufferHeight / 3f), 1.2f),
+                            new Decor(_miniPci, new Vector2(_graphics.PreferredBackBufferWidth / 3f, _graphics.PreferredBackBufferHeight / 1.6f), 3f),
+                            new Decor(_miniPci, new Vector2(_graphics.PreferredBackBufferWidth / 3f, _graphics.PreferredBackBufferHeight / 1.5f), 3f),
+                        },
+                        new List<Item>
+                        {
+                            new Damage(_damageItem, new Vector2(_graphics.PreferredBackBufferWidth / 5.6f, _graphics.PreferredBackBufferHeight / 1.2f)),
+                            new Health(_healthItem, new Vector2(_graphics.PreferredBackBufferWidth / 1.2f, _graphics.PreferredBackBufferHeight / 6f))
+                        },
+                        new Trapdoor(_trapdoor, new Vector2(_graphics.PreferredBackBufferWidth / 4f, _graphics.PreferredBackBufferHeight / 1.3f), 2.3f, listSfx[_NUMTRAPDOORSFX]))
+                    );
+            }
 
             // level 12
             if (Globals.multDifficulty == "Difficult")
@@ -553,7 +579,9 @@ namespace BugsDestroyer
             }
 
             // Boss Level
-            _listLevels.Add(
+            if (Globals.multDifficulty == "Difficult")
+            {
+                _listLevels.Add(
                 new Levels(
                     Sol[3],
                     new List<Enemy>
@@ -564,10 +592,33 @@ namespace BugsDestroyer
                     {
 
                     },
-                    new List<Item> { },
+                    new List<Item>
+                    {
+                    },
+                    new Trapdoor(_trapdoor, new Vector2(_graphics.PreferredBackBufferWidth / 2, _graphics.PreferredBackBufferHeight / 2), 2.3f, listSfx[_NUMTRAPDOORSFX]))
+                );
+            }
+            else
+            {
+                _listLevels.Add(
+                new Levels(
+                    Sol[3],
+                    new List<Enemy>
+                    {
+                        new Butterfly(new Vector2(_graphics.PreferredBackBufferWidth / 2, 200), _butterflySprites, _butterflyProjectile, _listSfx)
+                    },
+                    new List<Decor>
+                    {
+
+                    },
+                    new List<Item>
+                    {
+                        new Damage(_damageItem, new Vector2(_graphics.PreferredBackBufferWidth / 5.6f, _graphics.PreferredBackBufferHeight / 1.2f))
+                    },
                     new Trapdoor(_trapdoor, new Vector2(_graphics.PreferredBackBufferWidth / 2, _graphics.PreferredBackBufferHeight / 2), 2.3f, listSfx[_NUMTRAPDOORSFX])
                 )
             );
+            }
         }
     }
 }
