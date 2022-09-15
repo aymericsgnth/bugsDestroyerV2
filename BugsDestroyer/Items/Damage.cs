@@ -42,27 +42,8 @@ namespace BugsDestroyer
             {
                 if (hasCollidedWithPlayer(listItems, listPlayers[i]))
                 {
-                    //listPlayers[i].multiplicatorDamage += this.multiplicatorDamage;
-
-
                     listItems.Remove(this); // remove item
                     Globals.multiplicatorDmg++;
-
-       
-
-
-                    //while (timerDmg <= 10f)
-                    //{
-
-                    //    
-                    //    Debug.WriteLine(Globals.multiplicatorDmg);
-                    //    Debug.WriteLine(timerDmg);
-
-
-                    //}
-
-
-
                 }
             }
         }
