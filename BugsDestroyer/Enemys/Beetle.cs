@@ -225,7 +225,7 @@ namespace BugsDestroyer
                     {
                         case 2:
                             this.color = new Color(255, 170, 170);
-                            if (Globals.multDifficulty == "Difficult")
+                            if (Globals.multDifficulty == "Difficult" || Globals.multDifficulty == "Normal")
                             {
                                 this.speed += 1;
                             }
@@ -233,11 +233,11 @@ namespace BugsDestroyer
 
                         case 1:
                             this.color = new Color(255, 85, 85);
-                            if (Globals.multDifficulty == "Difficult" && Globals.multiplicatorDmg == 1)
+                            if (Globals.multDifficulty == "Difficult" || Globals.multDifficulty == "Normal" && Globals.multiplicatorDmg == 1)
                             {
                                 this.speed += 1;
                             }
-                            else if (Globals.multDifficulty == "Difficult" && Globals.multiplicatorDmg == 2)
+                            else if (Globals.multDifficulty == "Difficult" || Globals.multDifficulty == "Normal" && Globals.multiplicatorDmg == 2)
                             {
                                 this.speed += 2;
                             }
