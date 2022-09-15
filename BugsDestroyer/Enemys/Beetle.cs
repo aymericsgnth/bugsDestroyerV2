@@ -233,9 +233,13 @@ namespace BugsDestroyer
 
                         case 1:
                             this.color = new Color(255, 85, 85);
-                            if (Globals.multDifficulty == "Difficult")
+                            if (Globals.multDifficulty == "Difficult" && Globals.multiplicatorDmg == 1)
                             {
                                 this.speed += 1;
+                            }
+                            else if (Globals.multDifficulty == "Difficult" && Globals.multiplicatorDmg == 2)
+                            {
+                                this.speed += 2;
                             }
                             break;
                     }
