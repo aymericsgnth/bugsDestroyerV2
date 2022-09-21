@@ -184,7 +184,7 @@ namespace BugsDestroyer
                     },
                     new List<Item>
                     {
-                        new Damage(_damageItem, new Vector2(_graphics.PreferredBackBufferWidth / 3.6f, _graphics.PreferredBackBufferHeight / 1.2f))
+
                     },
                     new Trapdoor(_trapdoor, new Vector2(_graphics.PreferredBackBufferWidth / 1.5f, _graphics.PreferredBackBufferHeight / 4f), 2.3f, listSfx[_NUMTRAPDOORSFX])
                     )
@@ -217,7 +217,7 @@ namespace BugsDestroyer
                     },
                     new List<Item>
                     {
-
+                        new Damage(_damageItem, new Vector2(_graphics.PreferredBackBufferWidth / 1.8f, _graphics.PreferredBackBufferHeight / 4.2f))
                     },
                     new Trapdoor(_trapdoor, new Vector2(_graphics.PreferredBackBufferWidth / 3.3f, _graphics.PreferredBackBufferHeight / 4), 2.3f, listSfx[_NUMTRAPDOORSFX])
                     )
